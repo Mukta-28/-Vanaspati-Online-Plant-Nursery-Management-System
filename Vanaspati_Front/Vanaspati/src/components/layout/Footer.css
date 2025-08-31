@@ -1,0 +1,47 @@
+.footer {
+  background-color: #f7f7f7;
+  padding: 30px;
+  font-family: sans-serif;
+}
+
+.about-vanaspati {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-vanaspati h2 {
+  margin-bottom: 10px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.footer-columns div {
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-columns h4 {
+  margin-bottom: 10px;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-columns ul li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-icons li {
+  display: flex;
+  align-items: center;
+}

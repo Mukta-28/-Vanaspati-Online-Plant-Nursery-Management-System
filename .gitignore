@@ -1,0 +1,18 @@
+# Ignore Java/Maven build files
+target/
+*.class
+*.jar
+*.war
+*.log
+
+# Ignore Node.js/React files
+node_modules/
+build/
+dist/
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment files
+.env

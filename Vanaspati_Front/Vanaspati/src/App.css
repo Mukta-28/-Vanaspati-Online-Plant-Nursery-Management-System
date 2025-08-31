@@ -1,0 +1,213 @@
+/* Global Styles */
+:root {
+  --primary-color: #2e7d32;
+  --secondary-color: #4caf50;
+  --accent-color: #8bc34a;
+  --light-color: #f1f8e9;
+  --dark-color: #1b5e20;
+  --text-color: #333333;
+  --background-color: #ffffff;
+  --border-color: #e0e0e0;
+  --success-color: #43a047;
+  --danger-color: #e53935;
+  --warning-color: #ffb300;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--light-color);
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--light-color);
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Product Cards */
+.product-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .card-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.product-card .price {
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.product-card .card-text {
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Form Styling */
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.25);
+}
+
+/* Dashboard Styles */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-stats {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.dashboard-stats h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h4 {
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+}
+
+.stat-card .number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+  
+  .form-container {
+    padding: 1.5rem;
+  }
+}
