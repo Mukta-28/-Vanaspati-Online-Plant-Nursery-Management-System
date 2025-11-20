@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cdac</groupId>
-	<artifactId>FoodDeliveryApp</artifactId>
+	<artifactId>Vanaspati-Plant-Nursery</artifactId>
 	<version>0.0.1</version>
-	<name>FoodDeliveryApp</name>
-	<description>Food Delivery App	</description>
+	<name>Vanaspati</name>
+	<description>Vanaspati-Plant-Nursery</description>
 	<url />
 	<licenses>
 		<license />
