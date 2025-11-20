@@ -26,8 +26,8 @@ public class User extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    @Enumerated(EnumType.STRING) // ✅ Add this
-    private Status status;       // ✅ Add this field
+    @Enumerated(EnumType.STRING) 
+    private Status status;      
 
     private String address;
 }
